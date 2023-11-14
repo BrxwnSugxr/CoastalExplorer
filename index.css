@@ -3,3 +3,38 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+
+header {
+    background-color: #0077A7;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #0077A7; /* Ocean Blue */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #D2B48C; /* Sandy Beige */
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFA07A; /* Sunrise Orange */
+}
+
+nav a.active {
+    color: #FADADD; /* Shell Pink */
+}
