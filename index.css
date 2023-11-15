@@ -2,39 +2,89 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Add box-sizing for consistent sizing */
 }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: #0077A7;
-    padding: 15px;
-    text-align: center;
-    color: white;
+  background-color: #0077a7;
+  padding: 15px;
+  text-align: center;
+  color: white;
 }
 
 nav {
-    background-color: #0077A7; /* Ocean Blue */
-    padding: 10px;
-    text-align: center;
+  background-color: #0077a7; /* Ocean Blue */
+  padding: 10px;
+  text-align: center;
 }
 
 nav a {
-    color: #D2B48C; /* Sandy Beige */
-    text-decoration: none;
-    padding: 14px 16px;
-    display: inline-block;
-    font-size: 18px;
-    transition: color 0.3s;
+  color: #d2b48c; /* Sandy Beige */
+  text-decoration: none;
+  padding: 14px 16px;
+  display: inline-block;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #FFA07A; /* Sunrise Orange */
+  color: #ffa07a; /* Sunrise Orange */
 }
 
 nav a.active {
-    color: #FADADD; /* Shell Pink */
+  color: #fadadd; /* Shell Pink */
+}
+
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #d2b48c; /* Sandy Beige */
+}
+
+.hero .hero-text h1,
+.hero .hero-text h2 {
+  margin: 10px 0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 119, 167, 0.7),
+      rgba(0, 119, 167, 0.3)
+    ),
+    url('./img/hero.jpeg');
+  background-size: cover;
+}
+
+footer {
+  background-color: #0077a7; /* Ocean Blue */
+  color: #d2b48c; /* Sandy Beige */
+  padding: 15px;
+  text-align: center;
 }
