@@ -82,8 +82,6 @@ nav a.active {
   background-size: cover;
 }
 
-/* Your existing styles here */
-
 .features {
   text-align: center;
   padding: 20px;
@@ -113,6 +111,14 @@ nav a.active {
 
 .feature-description {
   display: none;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between items as needed */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
 }
 
 footer {

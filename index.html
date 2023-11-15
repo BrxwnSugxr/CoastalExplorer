@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coastal Explorer</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
@@ -16,8 +17,8 @@
         <a href="#contact">Contact</a>
       </nav>
     </header>
-    <!-- hero -->
     <section class="hero">
+      <!-- hero -->
       <img src="./img/hero.jpeg" alt="Beautiful Coastal View" />
       <div class="hero-text">
         <h1>Welcome to Coastal Explorer</h1>
@@ -33,35 +34,264 @@
       </p>
       <a href="#explore" class="cta-button">Random Exploring</a>
     </section>
+    <br />
     <!-- Features/Highlights -->
+
+    <h2>Features/Highlights</h2>
+    <div class="filter-options">
+      <label for="difficulty-filter">Filter by Difficulty:</label>
+      <select id="difficulty-filter">
+        <option value="all">All</option>
+        <option value="easy">Easy</option>
+        <option value="moderate">Moderate</option>
+        <option value="challenging">Challenging</option>
+      </select>
+
+      <label for="length-filter">Filter by Length:</label>
+      <select id="length-filter">
+        <option value="all">All</option>
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long">Long</option>
+      </select>
+    </div>
     <article class="features">
-      <h2>Features/Highlights</h2>
       <ul>
-        <li>Wattamolla to Eagle Rock, Royal National Park</li>
-        <li>Cape Baily Lighthouse, Botany Bay National Park</li>
-        <li>Palm Beach Lighthouse</li>
-        <li>Cronulla Beach Walk</li>
-        <li>Malabar Headland Walk</li>
-        <li>Jibbon Beach Loop, Royal National Park</li>
-        <li>Botany Bay Coastal Walk</li>
-        <li>Wattamolla to Little Marley Beach, Royal National Park</li>
-        <li>Bondi to Coogee Coastal Walk</li>
-        <li>
-          Bundeena to Wedding Cake Rock, Royal National Park (The Coast Track)
+        <li class="expandable-item">
+          <h3>Wattamolla to Eagle Rock, Royal National Park</h3>
+
+          <p>Distance: 8 km | Difficulty: Moderate | Estimated Time: 3 hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
         </li>
-        <li>Coogee to Maroubra</li>
-        <li>Cape Banks Circuit - La Perouse</li>
-        <li>Garie Beach to South Era Beach, Royal National Park</li>
-        <li>Federation Cliff Walk</li>
-        <li>Dee Why to Manly</li>
-        <li>Spit Bridge to Manly Walk</li>
-        <li>Hermitage Foreshore Walk</li>
-        <li>Bradley's Head to Chowder Bay Walk</li>
-        <li>Barrenjoey Lighthouse Walk</li>
-        <li>South Head Heritage Trail</li>
+        <li class="expandable-item">
+          <h3>Wattamolla to Eagle Rock, Royal National Park</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Cape Baily Lighthouse, Botany Bay National Park</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Palm Beach Lighthouse</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Cronulla Beach Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Malabar Headland Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Jibbon Beach Loop, Royal National Park</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Botany Bay Coastal Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Wattamolla to Little Marley Beach, Royal National Park</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Bondi to Coogee Coastal Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>
+            Bundeena to Wedding Cake Rock, Royal National Park (The Coast Track)
+          </h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Coogee to Maroubra</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Cape Banks Circuit - La Perouse</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Garie Beach to South Era Beach, Royal National Park</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Federation Cliff Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Dee Why to Manly</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Spit Bridge to Manly Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Hermitage Foreshore Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Bradley's Head to Chowder Bay Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>Barrenjoey Lighthouse Walk</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
+
+        <li class="expandable-item">
+          <h3>South Head Heritage Trail</h3>
+          <p>Distance: km | Diffculty: | Estimated Time: Hours</p>
+          <div class="expandable-content">
+            <p>
+              Experience the stunning coastal views and wildlife along this
+              beautiful walk.
+            </p>
+          </div>
+        </li>
       </ul>
     </article>
-    <script src="index.js"></script>
     <!-- footer -->
     <footer></footer>
   </body>
